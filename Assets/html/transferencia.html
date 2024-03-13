@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Billetera Digital - Transferencia</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/transferencia.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <img class="navbar-brand" width="50px" src="/img/mi banco.jpeg"><strong>Banco Nacional</strong></img>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="/html/inicio.html">Inicio</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="/html/saldo.html">Saldo</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/html/transferencia.html">Transferencia</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/html/ultimos moviminetos.html">Últimos movimientos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/html/login.html">Cerrar sesión</a>
+        </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container mt-5">
+    <h2>Transferir</h2>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th>Contactos</th>
+                <th>Número de Cuenta</th>
+                <th>Correo Electronico</th>
+                <th>Monto</th>
+                <th>Transferir</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Juan Contreras</td>
+                <td>34520723</td>
+                <td>  <label for="email"></label>
+                    <input type="email" id="email" name="email" !required></td> 
+                <td><input type="number"></td> 
+                <td><button type="button" onclick="alert('Transferencia exitosa'); document.querySelectorAll('input[type=number]').forEach(input => input.value = '');">Transferir</button></td>
+                
+            </tr>
+            <tr>
+                <td>Maria Valdivia</td>
+                <td>73485291</td>
+                <td>  <label for="email"></label>
+                    <input type="email" id="email" name="email" !required></td>
+                <td><input type="number"></td>
+                <td><button type="button" onclick="alert('Transferencia exitosa'); document.querySelectorAll('input[type=number]').forEach(input => input.value = '');">Transferir</button></td>
+            </tr>
+            <tr>
+                <td>Maria Gonzalez</td>
+                <td>34576923</td>
+                <td>  <label for="email"></label>
+                    <input type="email" id="email" name="email" !required></td>
+                <td><input type="number"></td> 
+                <td><button type="button" onclick="alert('Transferencia exitosa'); document.querySelectorAll('input[type=number]').forEach(input => input.value = '');">Transferir</button></td>
+            </tr>
+            <tr>
+                <td>Jose Herrera</td>
+                <td>9886374</td>
+                <td>  <label for="email"></label>
+                    <input type="email" id="email" name="email" required></td> 
+                <td><input type="number"></td>
+                <td><button type="button" onclick="alert('Transferencia exitosa'); document.querySelectorAll('input[type=number]').forEach(input => input.value = '');">Transferir</button></td>
+            </tr>
+            <tr>
+                <td>Solange Herrera</td>
+                <td>78847783</td>
+                <td>  <label for="email"></label>
+                    <input type="email" id="email" name="email" required></td>
+                <td><input type="number"></td> 
+                <td><button type="button" onclick="alert('Transferencia exitosa'); document.querySelectorAll('input[type=number]').forEach(input => input.value = '');">Transferir</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+                
+<div class="container mt-5">
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th>Agregar Contactos</th>
+            </tr>
+        </thead>
+    </table>
+<div class="card">
+    <div class="card-header">
+        Agregar Contacto
+    </div>
+    <div class="card-body">
+                  
+              
+                  
+            
+        <form id="agregarContactoForm">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="banco">Banco:</label>
+                <input type="text" class="form-control" id="banco" required>
+            </div>
+            <div class="form-group">
+                <label for="numero">Número de Cuenta:</label>
+                <input type="text" class="form-control" id="numero" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Agregar Contacto</button>
+        </form>
+    </div>
+</div>
+</div>
+    
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="/js/transferencia.js"></script>
+
+    </body>
+</html>
+      
+
+
+

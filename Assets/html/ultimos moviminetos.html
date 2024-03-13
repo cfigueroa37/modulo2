@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Billetera Digital</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/ultimos-moviminetos.css">
+  <style>
+    .navbar {
+      background-color: #007bff; 
+    }
+    body {
+        margin: 0; 
+        padding: 0; 
+    }
+    .container {
+        padding-left: 0; 
+        margin-left: 0;
+        max-width: 100%; 
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding-left: 15px; 
+        margin-left: auto; 
+        margin-right: auto; 
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <img class="navbar-brand" width="50px" src="/img/mi banco.jpeg"><Strong>Banco Nacional</Strong></img>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="inicio.html">Inicio</a>
+      <li class="nav-item active">
+        <a class="nav-link" href="saldo.html">Saldo</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="transferencia.html">Transferencia</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="ultimos moviminetos.html">Últimos movimientos</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" href="login.html">Cerrar sesión</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container mt-5">
+    <h2>Últimos Movimientos Bancarios</h2>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th>Fecha</th>
+                <th>Descripción</th>
+                <th>Monto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>01/03/2024</td>
+                <td>Transferencia recibida</td>
+                <td>$210.000</td>
+            </tr>
+            <tr>
+                <td>28/02/2024</td>
+                <td>Compra en comercio</td>
+                <td>-$89.990</td>
+            </tr>
+            <tr>
+                <td>25/02/2024</td>
+                <td>Transferencia recibida</td>
+                <td>$570.000</td>
+            </tr>
+            <tr>
+              <td>22/02/2024</td>
+              <td>Transferencia recibida</td>
+              <td>2.200.000</td>
+            </tr>
+            <tr>
+              <td>01/02/2024</td>
+              <td>Transferencia recibida</td>
+              <td>$250.000</td>
+          </tr>
+          <tr>
+              <td>28/01/2024</td>
+              <td>Compra en comercio</td>
+              <td>-$89.990</td>
+          </tr>
+          <tr>
+              <td>25/01/2024</td>
+              <td>Transferencia recibida</td>
+              <td>$520.000</td>
+          </tr>
+          <tr>
+            <td>22/01/2024</td>
+            <td>Transferencia recibida</td>
+            <td>200.000</td>
+          </tr>
+
+            
+        </tbody>
+    </table>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

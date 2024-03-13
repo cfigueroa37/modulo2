@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Billetera Digital</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/saldo.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <img class="navbar-brand" width="50px" src="/img/mi banco.jpeg"><strong>Banco Nacional</strong></img>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="/html/inicio.html">Inicio</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/html/saldo.html">Saldo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/html/transferencia.html">Transferencia</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/html/ultimos moviminetos.html">Últimos movimientos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/html/login.html">Cerrar sesión</a>
+        </li>
+    </ul>
+  </div>
+</nav>
+<div class="container mt-5">
+    <h2>Ultimos Movimientos</h2>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th>Tipo de Cuenta</th>
+                <th>Número de Cuenta</th>
+                <th>Saldo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Cuenta Corriente</td>
+                <td>79699691</td>
+                <td>
+                    <label>$</label>
+                    <label id="ctacte">1500000</label> 
+            </tr>
+            <tr>
+                <td>Cuenta de Ahorros</td>
+                <td>63564790</td>
+                <td>
+                    <label id="ctaahorro">500000</label>
+                </td>
+            </tr>
+            <tr>
+              <td>Cuenta Vista</td>
+              <td>67654653</td>
+              <td>
+                <label id="ctavista">200000</label>
+              </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th>Transferir Entre Mis Productos</th>
+            </tr>
+        </thead>
+    </table>
+    <form id="transferForm">
+        <div class="form-group">
+            <label for="fromAccount">Cuenta de Origen:</label>
+            <select class="form-control" id="fromAccount">
+                <option value="Corriente">Cuenta Corriente</option>
+                <option value="Ahorros">Cuenta de Ahorros</option>
+                <option value="Vista">Cuenta Vista</option>
+            </select>
+        </div>
+  
+        
+        
+        <div class="form-group">
+            <label for="toAccount">Cuenta de Destino:</label>
+            <select class="form-control" id="toAccount">
+                <option value="Corriente">Cuenta Corriente</option>
+                <option value="Ahorros">Cuenta de Ahorros</option>
+                <option value="Vista">Cuenta Vista</option>
+            </select>
+        </div>
+        <div class="col-md-6">
+            <label for="amount">Monto a Transferir:</label>
+            <input type="number" class="form-control" id="amount" placeholder="Ingrese el monto">
+            <button id="depositBtn" class="btn btn-primary">Transferir</button>
+
+        </div>
+    </form>
+</div><br><br>
+<footer>
+    <p>Derechos reservados para Bootcamps 3</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="/js/saldo.js"></script>
+
+</body>
+</html>
